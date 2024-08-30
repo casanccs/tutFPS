@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bweiis4o4urjc"]
+
+[ext_resource type="PackedScene" uid="uid://6w64vni7qoro" path="res://blasterB.glb" id="1_nc4e7"]
+
+[node name="gun" type="Node3D"]
+
+[node name="blasterB2" parent="." instance=ExtResource("1_nc4e7")]

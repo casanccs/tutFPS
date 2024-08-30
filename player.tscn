@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4heelwtf2j3l"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_s81te"]
+[ext_resource type="PackedScene" uid="uid://6w64vni7qoro" path="res://blasterB.glb" id="2_vis83"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q60ch"]
+albedo_color = Color(0.306435, 0.448662, 0.888073, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_rpnx2"]
+material = SubResource("StandardMaterial3D_q60ch")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xjk3u"]
+
+[node name="player" type="CharacterBody3D"]
+script = ExtResource("1_s81te")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_rpnx2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_xjk3u")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.5)
+
+[node name="ColorRect" type="ColorRect" parent="Camera3D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ancher" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.5)
+
+[node name="blasterB2" parent="ancher" instance=ExtResource("2_vis83")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.25, -0.2, -0.5)

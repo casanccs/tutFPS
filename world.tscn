@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxqbrq01m05rr"]
+
+[ext_resource type="PackedScene" uid="uid://d4heelwtf2j3l" path="res://player.tscn" id="1_qpooc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aelaw"]
+albedo_color = Color(0.152407, 0.40952, 0.100254, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_i2gmx"]
+material = SubResource("StandardMaterial3D_aelaw")
+size = Vector3(20, 0.1, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6okyl"]
+size = Vector3(20, 0.1, 20)
+
+[node name="World" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_i2gmx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_6okyl")
+
+[node name="player" parent="." instance=ExtResource("1_qpooc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.12627, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.017086, 0.999854, 0, -0.999854, 0.017086, 0.0423454, 10.0046, 0.0597248)
+light_energy = 1.255
