@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddp1v0osqxcth"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_c6kdp"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c6kdp")
+
+[node name="World 1" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "World 1"
+
+[node name="World 2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 169.0
+offset_right = 79.0
+offset_bottom = 200.0
+text = "World 2"
+
+[connection signal="pressed" from="World 1" to="." method="_on_world_1_pressed"]
+[connection signal="pressed" from="World 2" to="." method="_on_world_2_pressed"]

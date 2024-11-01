@@ -5,3 +5,5 @@
 [node name="gun" type="Node3D"]
 
 [node name="blasterB2" parent="." instance=ExtResource("1_nc4e7")]
+
+[editable path="blasterB2"]

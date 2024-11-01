@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxunrwd1lowyu"]
+
+[ext_resource type="Script" path="res://target.gd" id="1_e70t7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n0dpo"]
+albedo_color = Color(0.800099, 0, 0.0676942, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_hxshh"]
+material = SubResource("StandardMaterial3D_n0dpo")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_688sy"]
+
+[node name="target" type="CharacterBody3D" groups=["enemy"]]
+script = ExtResource("1_e70t7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_hxshh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_688sy")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

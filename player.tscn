@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://d4heelwtf2j3l"]
+[gd_scene load_steps=9 format=3 uid="uid://d4heelwtf2j3l"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_s81te"]
+[ext_resource type="Script" path="res://crosshair.gd" id="2_hekb8"]
 [ext_resource type="PackedScene" uid="uid://6w64vni7qoro" path="res://blasterB.glb" id="2_vis83"]
+[ext_resource type="AudioStream" uid="uid://d21g5ow0e044v" path="res://snow-step-2-102324.mp3" id="4_rm1ik"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q60ch"]
 albedo_color = Color(0.306435, 0.448662, 0.888073, 1)
@@ -11,7 +13,9 @@ material = SubResource("StandardMaterial3D_q60ch")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xjk3u"]
 
-[node name="player" type="CharacterBody3D"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1tf86"]
+
+[node name="player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_s81te")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
@@ -23,21 +27,56 @@ shape = SubResource("CapsuleShape3D_xjk3u")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.5)
 
+[node name="hurt" type="ColorRect" parent="Camera3D"]
+process_mode = 4
+visible = false
+offset_right = 2361.0
+offset_bottom = 1242.0
+color = Color(0.733333, 0.321569, 0.137255, 0.462745)
+
 [node name="ColorRect" type="ColorRect" parent="Camera3D"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
+process_mode = 4
+offset_left = 571.0
+offset_top = 319.0
+offset_right = 581.0
+offset_bottom = 329.0
+script = ExtResource("2_hekb8")
+
+[node name="mag" type="Label" parent="Camera3D"]
+offset_right = 58.0
+offset_bottom = 69.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "12"
+
+[node name="reloadprogress" type="ProgressBar" parent="Camera3D"]
+offset_top = 64.0
+offset_right = 200.0
+offset_bottom = 91.0
+value = 100.0
+show_percentage = false
+
+[node name="HealthBar" type="ProgressBar" parent="Camera3D"]
+offset_left = 478.0
+offset_top = 13.0
+offset_right = 678.0
+offset_bottom = 40.0
+theme_override_styles/fill = SubResource("StyleBoxEmpty_1tf86")
+value = 100.0
+show_percentage = false
 
 [node name="ancher" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.5)
 
 [node name="blasterB2" parent="ancher" instance=ExtResource("2_vis83")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.25, -0.2, -0.5)
+
+[node name="reloadt" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="Walking" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rm1ik")
+autoplay = true
+
+[connection signal="timeout" from="reloadt" to="." method="_on_reloadt_timeout"]

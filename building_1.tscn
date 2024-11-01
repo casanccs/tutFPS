@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmknvx0ulxwb3"]
+
+[ext_resource type="PackedScene" uid="uid://by0l0i7dt1wh8" path="res://GLB format/crypt-large.glb" id="1_kgybf"]
+[ext_resource type="PackedScene" uid="uid://tcwh5jpp83fy" path="res://GLB format/debris.glb" id="2_teg1f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y0vmq"]
+size = Vector3(1.1, 1, 2)
+
+[node name="Building1" type="StaticBody3D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.503575, 0)
+shape = SubResource("BoxShape3D_y0vmq")
+
+[node name="crypt-large2" parent="." instance=ExtResource("1_kgybf")]
+
+[node name="debris2" parent="." instance=ExtResource("2_teg1f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.726857)

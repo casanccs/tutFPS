@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://de2a2rftycne"]
+
+[ext_resource type="Script" path="res://bullet.gd" id="1_dr3gi"]
+[ext_resource type="AudioStream" uid="uid://x7mi12y6o1tu" path="res://bulletshot-impact-sound-effect-230462.mp3" id="2_vaw4b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2x7i"]
+albedo_color = Color(0.632, 0.461713, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_u6auu"]
+material = SubResource("StandardMaterial3D_y2x7i")
+size = Vector3(0.02, 0.02, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_51xqd"]
+size = Vector3(0.02, 0.02, 0.1)
+
+[node name="bullet" type="CharacterBody3D"]
+collision_layer = 8
+collision_mask = 6
+script = ExtResource("1_dr3gi")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_u6auu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_51xqd")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="Effect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_vaw4b")
+autoplay = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

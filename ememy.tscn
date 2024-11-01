@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://w5baopm6hn6m"]
+
+[ext_resource type="Script" path="res://ememy.gd" id="1_aej8x"]
+[ext_resource type="AudioStream" uid="uid://cxgoa08rhx0gh" path="res://zombie-6851.mp3" id="2_m2d2g"]
+[ext_resource type="PackedScene" uid="uid://dijyepb4gpoio" path="res://GLB format/character-zombie.glb" id="3_ye7td"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bgo07"]
+
+[node name="ememy" type="CharacterBody3D" groups=["enemy"]]
+script = ExtResource("1_aej8x")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.931069, 0)
+shape = SubResource("CapsuleShape3D_bgo07")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Sound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_m2d2g")
+
+[node name="SoundTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="character-zombie2" parent="." instance=ExtResource("3_ye7td")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="SoundTimer" to="." method="_on_sound_timer_timeout"]
