@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dey4k4tbuvna6"]
+
+[ext_resource type="PackedScene" uid="uid://bnkj7f64nyoh4" path="res://Mini-Arcade/air-hockey.glb" id="1_4b4jf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oymij"]
+size = Vector3(1, 0.5, 0.7)
+
+[node name="Air Hockey Machine" type="StaticBody3D"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="air-hockey2" parent="." instance=ExtResource("1_4b4jf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("BoxShape3D_oymij")

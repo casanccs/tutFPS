@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bm8qp0j6a85g2"]
+
+[ext_resource type="PackedScene" uid="uid://cxxep4hnntc31" path="res://Mini-Arcade/floor.glb" id="1_wtxsd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7m1s8"]
+size = Vector3(1, 0.07, 1)
+
+[node name="Single Floor" type="StaticBody3D"]
+
+[node name="floor2" parent="." instance=ExtResource("1_wtxsd")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_7m1s8")
