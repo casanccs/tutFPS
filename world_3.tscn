@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d4heelwtf2j3l" path="res://player.tscn" id="1_gsbdf"]
 [ext_resource type="PackedScene" uid="uid://bm8qp0j6a85g2" path="res://world 3 stuff/single_floor.tscn" id="2_73a0x"]
 [ext_resource type="PackedScene" uid="uid://dey4k4tbuvna6" path="res://world 3 stuff/air_hockey_machine.tscn" id="3_nmvjq"]
-[ext_resource type="PackedScene" uid="uid://ddlanfssh86xg" path="res://Mini-Arcade/wall-door-rotate.glb" id="4_n800s"]
+[ext_resource type="PackedScene" uid="uid://cv3uke5m6m0ck" path="res://world 3 stuff/single_stair.tscn" id="5_sourd"]
 
 [node name="World 3" type="Node3D"]
 
@@ -426,7 +426,1132 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
 [node name="Single Floor4" parent="Floors/Floors(4x4)7/Floors(2x2)4" instance=ExtResource("2_73a0x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
 
+[node name="Floors(4x4)8" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -4)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)8"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)8/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)8/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)8/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)8/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)8/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)8/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)8/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)8/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)8/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)8/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)8/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)8/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)8/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)8/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)8/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)8/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)9" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -4)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)9"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)9/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)9/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)9/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)9/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)9/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)9/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)9/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)9/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)9/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)9/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)9/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)9/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)9/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)9/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)9/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)9/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)10" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -8)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)10"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)10/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)10/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)10/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)10/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)10/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)10/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)10/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)10/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)10/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)10/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)10/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)10/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)10/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)10/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)10/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)10/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)11" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -8)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)11"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)11/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)11/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)11/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)11/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)11/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)11/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)11/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)11/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)11/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)11/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)11/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)11/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)11/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)11/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)11/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)11/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)12" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -12)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)12"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)12/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)12/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)12/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)12/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)12/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)12/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)12/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)12/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)12/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)12/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)12/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)12/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)12/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)12/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)12/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)12/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)13" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)13"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)13/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)13/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)13/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)13/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)13/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)13/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)13/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)13/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)13/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)13/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)13/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)13/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)13/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)13/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)13/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)13/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)14" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -12)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)14"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)14/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)14/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)14/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)14/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)14/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)14/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)14/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)14/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)14/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)14/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)14/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)14/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)14/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)14/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)14/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)14/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)15" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -12)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)15"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)15/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)15/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)15/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)15/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)15/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)15/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)15/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)15/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)15/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)15/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)15/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)15/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)15/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)15/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)15/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)15/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)16" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -12)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)16"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)16/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)16/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)16/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)16/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)16/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)16/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)16/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)16/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)16/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)16/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)16/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)16/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)16/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)16/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)16/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)16/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)17" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -16)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)17"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)17/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)17/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)17/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)17/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)17/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)17/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)17/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)17/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)17/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)17/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)17/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)17/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)17/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)17/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)17/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)17/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)18" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)18"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)18/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)18/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)18/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)18/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)18/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)18/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)18/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)18/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)18/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)18/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)18/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)18/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)18/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)18/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)18/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)18/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)19" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -16)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)19"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)19/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)19/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)19/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)19/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)19/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)19/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)19/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)19/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)19/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)19/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)19/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)19/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)19/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)19/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)19/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)19/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)20" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -16)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)20"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)20/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)20/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)20/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)20/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)20/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)20/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)20/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)20/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)20/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)20/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)20/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)20/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)20/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)20/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)20/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)20/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)21" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -16)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)21"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)21/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)21/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)21/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)21/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)21/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)21/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)21/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)21/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)21/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)21/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)21/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)21/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)21/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)21/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)21/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)21/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)22" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -20)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)22"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)22/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)22/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)22/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)22/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)22/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)22/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)22/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)22/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)22/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)22/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)22/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)22/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)22/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)22/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)22/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)22/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)23" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)23"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)23/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)23/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)23/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)23/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)23/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)23/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)23/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)23/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)23/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)23/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)23/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)23/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)23/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)23/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)23/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)23/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)24" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -20)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)24"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)24/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)24/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)24/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)24/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)24/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)24/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)24/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)24/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)24/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)24/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)24/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)24/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)24/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)24/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)24/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)24/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)25" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -20)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)25"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)25/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)25/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)25/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)25/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)25/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)25/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)25/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)25/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)25/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)25/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)25/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)25/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)25/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)25/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)25/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)25/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(4x4)26" type="Node3D" parent="Floors"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -20)
+
+[node name="Floors(2x2)" type="Node3D" parent="Floors/Floors(4x4)26"]
+
+[node name="Single Floor" parent="Floors/Floors(4x4)26/Floors(2x2)" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)26/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)26/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)26/Floors(2x2)" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)2" type="Node3D" parent="Floors/Floors(4x4)26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)26/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)26/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)26/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)26/Floors(2x2)2" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)3" type="Node3D" parent="Floors/Floors(4x4)26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)26/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)26/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)26/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)26/Floors(2x2)3" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="Floors(2x2)4" type="Node3D" parent="Floors/Floors(4x4)26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Single Floor" parent="Floors/Floors(4x4)26/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+
+[node name="Single Floor2" parent="Floors/Floors(4x4)26/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Single Floor3" parent="Floors/Floors(4x4)26/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Single Floor4" parent="Floors/Floors(4x4)26/Floors(2x2)4" instance=ExtResource("2_73a0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
 [node name="Walls" type="Node3D" parent="."]
 
-[node name="wall-door-rotate2" parent="." instance=ExtResource("4_n800s")]
-transform = Transform3D(-1.74846e-07, 0, 4, 0, 4, 0, -4, 0, -1.74846e-07, 9.26329, 0, -4.52318)
+[node name="Stairs" type="Node3D" parent="."]
+
+[node name="SingleStair" parent="Stairs" instance=ExtResource("5_sourd")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.89446, 0, -12.5817)
+
+[node name="SingleStair2" parent="Stairs" instance=ExtResource("5_sourd")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.89446, 2.12207, -16.0816)
+
+[node name="SingleStair3" parent="Stairs" instance=ExtResource("5_sourd")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.623298, 0, -12.5817)
+
+[node name="SingleStair4" parent="Stairs" instance=ExtResource("5_sourd")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.623298, 2.12207, -16.0816)
+
+[node name="SingleStair5" parent="Stairs" instance=ExtResource("5_sourd")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.2743, 0, -12.5817)
+
+[node name="SingleStair6" parent="Stairs" instance=ExtResource("5_sourd")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.2743, 2.12207, -16.0816)
+
+[node name="SingleStair7" parent="Stairs" instance=ExtResource("5_sourd")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15.5455, 0, -12.5817)
+
+[node name="SingleStair8" parent="Stairs" instance=ExtResource("5_sourd")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15.5455, 2.12207, -16.0816)
