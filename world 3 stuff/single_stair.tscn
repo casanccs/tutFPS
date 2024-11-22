@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://nbdj3t7o0c5s" path="res://Building-Kit/stairs-open.glb" id="1_ol816"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_466ki"]
-size = Vector3(2.58405, 0.358459, 4.09917)
+size = Vector3(2.58405, 0.358459, 4.67396)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bgwrt"]
 size = Vector3(2.62415, 0.129822, 0.524536)
@@ -16,7 +16,7 @@ size = Vector3(2.62415, 0.129822, 0.524536)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.28747, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.859594, 0.510978, 0, -0.510978, 0.859594, -0.653229, 1.30452, -0.174736)
+transform = Transform3D(1, 0, 0, 0, 0.859594, 0.510978, 0, -0.510978, 0.859594, -0.653229, 1.15767, -0.421781)
 shape = SubResource("BoxShape3D_466ki")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="."]

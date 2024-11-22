@@ -8,7 +8,7 @@ var mhp = 10
 
 var bullet_scene = load("res://bullet.tscn")
 
-const SPEED = 2.0
+const SPEED = 8.0
 const JUMP_VELOCITY = 4.5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
